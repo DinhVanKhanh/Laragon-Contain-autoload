@@ -1,0 +1,18 @@
+parameters:
+    level: 2
+    paths:
+        - lib/
+        - tests/
+
+    ignoreErrors:
+        # To be fixed:
+        - '#Call to an undefined method Facebook\\WebDriver\\WebDriver::getTouch\(\)#'
+        - '#Call to an undefined method Facebook\\WebDriver\\WebDriverElement::getCoordinates\(\)#'
+        - '#Call to an undefined method Facebook\\WebDriver\\WebDriverElement::equals\(\)#'
+        - '#Unsafe usage of new static\(\)#'
+
+        # Parameter is intentionally not part of signature to not break BC
+        - message: '#PHPDoc tag \@param references unknown parameter: \$isW3cCompliant#'
+          path: 'lib/Remote/RemoteWebDriver.php'
+
+    inferPrivatePropertyTypeFromConstructor: true
