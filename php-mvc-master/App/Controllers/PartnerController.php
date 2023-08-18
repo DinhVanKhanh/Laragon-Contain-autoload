@@ -274,7 +274,7 @@ class PartnerController extends \Core\Controller
 
 	public static function connectDriver()
 	{
-		
+
 		// This is where Selenium server 2/3 listens by default. For Selenium 4, Chromedriver or Geckodriver, use http://localhost:4444/
 		$host = 'http://localhost:4444/wd/hub';
 		
@@ -491,7 +491,6 @@ class PartnerController extends \Core\Controller
 
 		echo '<pre>';
 		print_r($HandleCount);
-		echo '<pre>';
 		die();
 
 		sleep(2);
